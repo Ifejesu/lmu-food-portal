@@ -1,0 +1,13 @@
+<mat-spinner *ngIf="loading"></mat-spinner>
+<p class="text-center" *ngIf="foods.length <= 0 && !loading">No food for sale!</p>
+<div class="food-grid" *ngIf="foods.length >= 0">
+    <div class="food-pane" *ngFor="let food of foods" [ngClass]="{'open': food._id === chosenId}"
+        [ngStyle]="{'background-image': 'url(' + food.imageUrl + ')'}" (click)="onProductClicked(food._id)">
+        <div class="food-info">
+            <h2>
+                {{ food.name }}
+            </h2>
+            <h3>{{ food.price | currency: '&#8358;' }}</h3>
+        </div>
+    </div>
+</div>

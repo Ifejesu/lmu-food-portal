@@ -1,0 +1,21 @@
+input[type="file"] {
+  visibility: hidden;
+}
+.image-preview {
+  img {
+    max-width: 40%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  width: 90%;
+}
+
+.form-container > * {
+  width: 90%;
+}

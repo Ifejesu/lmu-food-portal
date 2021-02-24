@@ -1,0 +1,41 @@
+.food-grid {
+  width: 94%;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.food-pane {
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  width: 270px;
+  height: 270px;
+  margin: 15px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 1px 1px 3px #333333;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.food-info {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+
+  h2 {
+    font-weight: 800;
+    margin: 10px;
+  }
+  h3 {
+    color: #6eff9e;
+    font-weight: 500;
+    margin: 10px;
+  }
+}

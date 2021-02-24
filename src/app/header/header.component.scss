@@ -1,0 +1,45 @@
+header {
+  display: flex;
+  align-items: center;
+  background-color: #3cbe00;
+  color: white;
+  padding: 0.2rem 2%;
+  margin-bottom: 3%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 5%;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 14px;
+}
+
+a {
+  color: white;
+  font-weight: 600;
+  padding: 0.4rem 0.6rem;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    background-color: #ffffff56;
+    color: white;
+    border-radius: 8px;
+  }
+}
+
+.active {
+  background-color: #ffffff56;
+  color: white;
+  border-radius: 8px;
+}
+
+.nav-end {
+  flex-direction: row-reverse;
+  flex-grow: 1;
+}
